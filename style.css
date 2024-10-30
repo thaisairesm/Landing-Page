@@ -1,0 +1,78 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 100px;
+    padding: 0;
+    background-color:#589a9c86 ;
+    
+}
+
+/* Pseudoelemento aplicado ao h1 adicionando conteúdo antes */
+
+h1::before{
+    content: "Tema: ";
+    font-weight: 900;
+    color: #366163;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #366163 ;
+    margin: 2px;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f0f8ff;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover{
+    background-color: #1eb7d291;
+}
+
+nav ul li a:active{
+    background-color: rgb(42, 71, 165);
+}
+nav ul li a:visited{
+    background-color: #2a6aa5;
+    color: #000080;
+}
+
+p::first-letter{
+    font-size: 1.5em;
+}
+
+footer{
+    text-align: center;
+    margin: 100px;
+}
+
+@media (max-width: 480px) {
+    .column{
+        flex: 1 1 100%;
+    }
+    .header h1 {
+        font-size: 20px;
+    }
+
+    body{
+        margin: 50px;
+    }
+
+    .img{
+        width: 350px;
+    }
+
+    footer{
+        margin: 10px;
+    }
+}
+
